@@ -4,7 +4,8 @@
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./src/styles/styless.css">
+    <link rel="stylesheet" href="./src/styles/homeStyles.css">
 </head> 
 
 <body> 
@@ -48,7 +49,7 @@
             <a href="#" style="font-size: 12px;">Leanr More</a>
         </div>
     </div>
-    <div class="container" style="background-color:#F1F4FA;margin-top: 70px;">
+    <div class="container" style="margin-top: 70px;">
         <div class="left-side" style="padding-right: 80px;">
            <p style="font-weight: bold;font-size: 10px;color:#FF4B36;">POPULAR</p>
            <h2 style="font-weight: bold;font-size: 25px;">Creativity & experience, our greatest tools</h2>
@@ -122,7 +123,10 @@
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 box-shadow border-0">
-                <img class="card-img-top" src="./src/Picture.png" alt="Card image cap">
+                <a href="#img1"><img class="card-img-top" src="./src/Picture.png" alt="Card image cap"></a>
+                <a href="#" class="lightbox" id="img1">
+                  <span style="background-image: url('./src/Picture.png')"></span>
+                </a>
                 <div class="card-body">
                   <p class="card-text font-weight-bold">How to manage your time efficiently to do more</p>
                   <p class="card-text" style="font-size: 12px;">With lots of unique blocks, you can easily build a page without coding. Build your next job website.</p>
@@ -133,7 +137,10 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow border-0">
-                <img class="card-img-top" src="./src/blog-2 1.png" alt="Card image cap">
+                <a href="#img2"><img class="card-img-top" src="./src/blog-2 1.png" alt="Card image cap"></a>
+                <a href="#" class="lightbox" id="img2">
+                  <span style="background-image: url('./src/blog-2 1.png')"></span>
+                </a>
                 <div class="card-body">
                   <p class="card-text font-weight-bold">How to manage your time efficiently to do more</p>
                   <p class="card-text" style="font-size: 12px;">With lots of unique blocks, you can easily build a page without coding. Build your next job website.</p>
@@ -144,7 +151,10 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow border-0">
-                <img class="card-img-top" src="./src/blog-3 1.png" alt="Card image cap">
+                <a href="#img3"><img class="card-img-top" src="./src/blog-3 1.png" alt="Card image cap"></a>
+                <a href="#" class="lightbox" id="img3">
+                  <span style="background-image: url('./src/blog-3 1.png')"></span>
+                </a>
                 <div class="card-body">
                   <p class="card-text font-weight-bold">How to manage your time efficiently to do more</p>
                   <p class="card-text" style="font-size: 12px;">With lots of unique blocks, you can easily build a page without coding. Build your next job website.</p>
@@ -201,116 +211,3 @@
 
 </body>
 </html>
-
-<style>
-body {
- font-family: Arial, sans-serif;
-}
-
-.TopHeader {
-    width: 100%;
-    height: 675px;
-    background-image: url(./src/Hero\ Section.png);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-}
-
-.navbar {
- display: flex;
- padding: 10px;
-}
-
-.navbar a {
- float: left;
- display: block;
- color: #f2f2f2;
- padding: 16px 20px;
- text-decoration: none;
-}
-
-.navbar a:hover::before {
- content: "";
- position: absolute;
- width: 40px;
- height: 2px;
- bottom: 20px;
- background-color: white;
-}
-
-.navbar-button {
- float: right;
- background-color: #000000;
- color: #f2f2f2;
- border: none;
- cursor: pointer;
- padding: 10px 20px;
- margin: 5px;
- text-decoration: none;
- border-radius: 5px;
-}
-
-.navbar-button:hover {
- background-color: #ddd;
- color: black;
-}
-
-.started {
- background-color: #000000;
- color: #f2f2f2;
- border: none;
- cursor: pointer;
- padding: 10px 20px;
- margin: 5px;
- text-decoration: none;
- border-radius: 5px;
-}
-
-.started:hover {
- background-color: #ddd;
- color: black;
-}
-
-.container {
- display: flex;
-}
-
-.left-side {
- flex: 50%;
- padding: 10px;
-}
-
-.right-side {
- flex: 50%;
- padding: 10px;
-}
-
-.kuy {
-    background: url(./src/Check.png) no-repeat left ;
-    height: 30px;
-    padding-left: 40px;
-    margin: 10px;
-    font-size: 12px;
-}
-
-.updates input[type=text] {
- padding: 8px;
- font-size: 14px;
- border: none;
- width: 100%;
-}
-
-.btn {
- background: url(./src/Icon.png) no-repeat;
- padding: 20px;
- margin-top: 8px;
- position: absolute;
- right: 0;
-}
-
-.footer {
-    padding: 10px;
-    margin: 10px 0px;
-    text-align: center;
-    font-size: 13px;
-}
-</style>
